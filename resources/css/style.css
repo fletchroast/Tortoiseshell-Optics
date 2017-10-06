@@ -57,26 +57,23 @@ body {
 }
 
 /*content*/
-.content {
+
+.icons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .icon {
   height: 8rem;
-  border: 1px solid blue;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin: 3rem;
 }
 
-.icon img {
-  margin: 3rem 6rem 0 6rem;
-  height: auto;
-  display: block;
+.icon p {
+  text-align: center;
 }
 
 .portrait {
@@ -89,7 +86,10 @@ body {
 
 .info {
   width: 35%;
-  border: 1px solid red;
+}
+
+.infos {
+  display: flex;
 }
 
 .info h2 {
@@ -104,6 +104,10 @@ body {
 
 .info p {
   margin-bottom: 5rem;
+}
+
+#philosophy {
+  margin-right: 5%;
 }
 
 /*footer*/

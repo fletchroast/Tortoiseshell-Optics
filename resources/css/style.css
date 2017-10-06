@@ -34,8 +34,12 @@ body {
   padding-right: 2rem;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 /*banner*/
-.banner {
+.background-image {
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -57,7 +61,6 @@ body {
 }
 
 /*content*/
-
 .icons {
   display: flex;
   justify-content: center;
@@ -120,4 +123,109 @@ body {
 .footer img {
   padding: 4rem 1rem 4rem 4rem;
   height: 1.5rem;
+}
+
+/*media-queries*/
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .background-image {
+    height: 22rem;
+  }
+
+  .look-see {
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    position: static;
+    padding: 2rem 4rem;
+    text-align: center;
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .background-image {
+    background-position: 20%;
+    height: 24rem;
+  }
+
+  .look-see {
+    font-size: 1rem;
+    position: static;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 9rem;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    color: white;
+    margin-right: 2rem;
+  }
+
+  .icons {
+    flex-direction: column;
+    margin: 3.77rem 0;
+  }
+
+  .icon {
+    margin: 1.54rem 0;
+    font-size: 0.77rem;
+  }
+
+  .infos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .info p {
+    font-size: 0.77rem;
+    margin: 1rem 0 4rem 0;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .footer span {
+    display: none;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
+  .footer img {
+    padding: 4rem 0;
+  }
+
+  #philosophy {
+    margin-right: 0;
+  }
 }
